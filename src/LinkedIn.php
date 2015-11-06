@@ -24,6 +24,8 @@ limitations under the License.
 
 namespace sociall;
 
+require_once 'APIWrapper.php';
+
 /**
  * The LinkedIn class can be used to authenticate users using
  * the LinkedIn API (@see https://developer.linkedin.com/docs/oauth2).
@@ -88,7 +90,7 @@ class LinkedIn
      */
     public function getAuthorizationURL()
     {
-        $app_id     = $this->getAppId()
+        $app_id     = $this->getAppId();
         $app_secret = $this->getAppSecret();
 
         // create CSRF token. (security for Cross Site Resource Forgery)
@@ -361,7 +363,7 @@ class LinkedIn
  * @subpackage LinkedIn Exception Handling
  */
 class LinkedIn_Exception
-    extends Exception
+    extends \Exception
 {}
 
 /**
