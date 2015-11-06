@@ -1,0 +1,30 @@
+{
+    "name": "evias/sociall",
+    "description": "Sociall is a PHP Social API Integrations Library",
+    "type": "library",
+    "license": "http://www.apache.org/licenses/LICENSE-2.0",
+    "authors": [
+        {
+            "name": "Grégory Saive",
+            "email": "greg@evias.be"
+        }
+    ],
+    "keywords": [
+        "sociall",
+        "api",
+        "authentication"
+    ],
+    "support": {
+        "issues": "https://github.com/evias/sociall/issues"
+    },
+    "require": {
+        "php": ">=5.3",
+        "phpunit/phpunit": "5.0.*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
