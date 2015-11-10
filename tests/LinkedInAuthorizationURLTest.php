@@ -24,7 +24,7 @@ limitations under the License.
 
 namespace sociall\Tests;
 
-require_once 'PHPUnit/Autoload.php';
+require 'vendor/autoload.php';
 require_once 'src/LinkedIn.php';
 
 class LinkedInAuthorizationURLTest
