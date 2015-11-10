@@ -12,7 +12,9 @@
     "keywords": [
         "sociall",
         "api",
-        "authentication"
+        "authentication",
+        "linkedin",
+        "facebook"
     ],
     "support": {
         "issues": "https://github.com/evias/sociall/issues"
@@ -20,12 +22,21 @@
     "require": {
         "php": ">=5.3",
         "phpunit/phpunit": "5.0.*",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "facebook/php-sdk-v4": "4.*"
     },
     "autoload": {
         "psr-0": {
             "sociall": "src/",
             "sociall\\Tests": "tests/"
+        },
+        "psr-4": {
+            "Facebook\\": "src/Facebook/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "fb-dev": "4.0-dev"
         }
     }
 }
