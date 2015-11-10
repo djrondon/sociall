@@ -93,7 +93,7 @@ class LinkedIn
         $app_id     = $this->getAppId();
         $app_secret = $this->getAppSecret();
 
-        // create CSRF token. (security for Cross Site Resource Forgery)
+        // create CSRF token. (security for Cross Site Request Forgery)
         $random     = bin2hex(openssl_random_pseudo_bytes(16));
         $csrf_token = sha1(sprintf("%s-%s-%s-%d",
                             $app_secret, $app_id, $random, time()));
